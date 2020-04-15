@@ -42,12 +42,16 @@ app.post("/login", (req, res) => {
   console.log(username.username)
   res.cookie("username", username.username)
   res.redirect("/urls");
-})
+});
 
 app.get("/logout", (req, res) => {
   res.clearCookie('username');
   res.redirect("/urls");
-})
+});
+
+app.get("/register", (req, res) => {
+  res.render("register")
+});
 
 // BELOW ARE NEW REQUEST HANDLERS. ABOVE WAS JUST TESTING
 
