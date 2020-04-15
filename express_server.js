@@ -44,14 +44,19 @@ app.post("/login", (req, res) => {
   res.redirect("/urls");
 })
 
+app.get("/logout", (req, res) => {
+  res.clearCookie('username');
+  res.redirect("/urls");
+})
+
 // BELOW ARE NEW REQUEST HANDLERS. ABOVE WAS JUST TESTING
 
 app.get("/urls", (req, res) => {
-  let templateVars = { 
-    urls: urlDatabase,
-    username: req.cookies["username"]
-  };
-  res.render("urls_index", templateVars);
+    let templateVars = { 
+      urls: urlDatabase,
+      username: req.cookies["username"]
+    }
+    res.render("urls_index", templateVars);
 });
 
 app.post("/urls", (req, res) => {
