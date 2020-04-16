@@ -59,9 +59,19 @@ app.get("/login", (req, res) => {
 });
 
 app.post("/login", (req, res) => {
-  const username = req.body
-  console.log(username.username)
-  res.cookie("username", username.username)
+  let email = req.body.email;
+  let password = req.body.password;
+  let userID = checkUserEmail(email, users);
+  console.log(userID, email, password)
+
+  if (!userID) {
+    res.status(403).send("Email not valid. Please register.")
+    return;
+  } else if (password !== users[userID].password) {
+    res.status(403).send("Password incorrect. Please try logging in again");
+  }
+
+  res.cookie("user_id", userID);
   res.redirect("/urls");
 });
 
