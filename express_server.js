@@ -1,14 +1,19 @@
 const express = require("express");
 const app = express();
 const PORT = 8080;
-const cookieParser = require("cookie-parser")
+// const cookieParser = require("cookie-parser")
+const cookieSession = require("cookie-session")
 const bodyParser = require("body-parser");
 const { checkUserEmail, urlsForUser } = require("./helper");
 const bcrypt = require('bcrypt');
 
 
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(cookieParser());
+// app.use(cookieParser());
+app.use(cookieSession({
+  name: 'session',
+  keys: ['key1', 'key2']
+}));
 app.set("view engine", "ejs");
 
 // generates 6 character alphanumeric string
@@ -73,14 +78,19 @@ app.post("/login", (req, res) => {
     res.status(403).send("Password incorrect. Please try logging in again");
   }
 
-  res.cookie("user_id", userID);
+  req.session.user_id = userID;
   res.redirect("/urls");
 });
 
 app.get("/logout", (req, res) => {
-  res.clearCookie('user_id');
+  req.session = null;
   res.redirect("/urls");
 });
+
+app.post("/logout", (req, res) => {
+  res.clearCookie('user_id');
+  res.redirect('/urls');
+})
 
 app.get("/register", (req, res) => {
   res.render("register")
@@ -109,21 +119,21 @@ app.post("/register", (req, res) => {
   users[userID] = userInfo;
   console.log(users);
 
-  res.cookie("user_id", userID)
+  req.session.user_id = userID
   res.redirect("urls")
 });
 
 // BELOW ARE NEW REQUEST HANDLERS. ABOVE WAS JUST TESTING
 
 app.get("/urls", (req, res) => {
-  let filteredUrls = urlsForUser(req.cookies.user_id, urlDatabase);
+  let filteredUrls = urlsForUser(req.session.user_id, urlDatabase);
 
-  if(!users[req.cookies.user_id]) {
+  if(!users[req.session.user_id]) {
     res.status(403).send("Please Login or Register!")
   } else {
     let templateVars = { 
       filteredUrls: filteredUrls,
-      user: users[req.cookies.user_id]
+      user: users[req.session.user_id]
     }
     res.render("urls_index", templateVars);
   }
@@ -136,16 +146,16 @@ app.post("/urls", (req, res) => {
   let longURL = req.body.longURL;
   urlDatabase[newShortURL] = {
     longURL : longURL,
-    userID: req.cookies.user_id
+    userID: req.session.user_id
   }
   console.log(urlDatabase);
   res.redirect(`/urls/${newShortURL}`);
 });
 
 app.get("/urls/new", (req, res) => {
-  let templateVars = { user: users[req.cookies.user_id] }
+  let templateVars = { user: users[req.session.user_id] }
 
-  if (!users[req.cookies.user_id]) {
+  if (!users[req.session.user_id]) {
     res.redirect("/login");
     return;
   }
@@ -154,21 +164,21 @@ app.get("/urls/new", (req, res) => {
 });
 
 app.get("/urls/:shortURL", (req, res) => {
-  if(!users[req.cookies.user_id]) {
+  if(!users[req.session.user_id]) {
     res.status(403).send("Please login or register!")
   }
   const shortURL = req.params.shortURL;
   const longURL = urlDatabase[shortURL].longURL;
   let templateVars = { 
     shortURL, longURL,
-    user: users[req.cookies.user_id]
+    user: users[req.session.user_id]
   }
 
   res.render("urls_show", templateVars);
 });
 
 app.post("/urls/:shortURL/delete", (req, res) => {
-  let userUrl = urlsForUser(req.cookies.user_id, urlDatabase)
+  let userUrl = urlsForUser(req.session.user_id, urlDatabase)
 
   for (let key in userUrl) {
     if (req.params.shortURL === key) {
@@ -185,7 +195,7 @@ app.post("/urls/:id", (req, res) => {
   let id = req.params.id
   let newLongURL = req.body.longURL
   
-  let userUrl = urlsForUser(req.cookies.user_id, urlDatabase)
+  let userUrl = urlsForUser(req.session.user_id, urlDatabase)
 
   for (let key in userUrl) {
     if (id === key) {
