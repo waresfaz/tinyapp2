@@ -4,6 +4,8 @@ const PORT = 8080;
 const cookieParser = require("cookie-parser")
 const bodyParser = require("body-parser");
 const { checkUserEmail, urlsForUser } = require("./helper");
+const bcrypt = require('bcrypt');
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
@@ -88,13 +90,13 @@ app.post("/register", (req, res) => {
   let userID = generateRandomString();
   let email = req.body.email
   let password = req.body.password;
-  // console.log(userID, email, password);
+  const hashedPassword = bcrypt.hashSync(password, 10);
   let userInfo = { 
     id: userID, 
     email: email, 
-    password: password 
+    password: hashedPassword 
   }
-  // console.log(userInfo)
+  console.log(userInfo)
 
   if (email === "" || password === "") {
     res.status(400).send("Field cannot be empty");

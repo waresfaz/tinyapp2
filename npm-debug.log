@@ -1,0 +1,702 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/waresfazelyar/.nvm/versions/node/v7.2.1/bin/node',
+1 verbose cli   '/Users/waresfazelyar/.nvm/versions/node/v7.2.1/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-E',
+1 verbose cli   'bcrypt@2.0.0' ]
+2 info using npm@3.10.10
+3 info using node@v7.2.1
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData bcrypt@2.0.0
+8 silly fetchNamedPackageData bcrypt
+9 silly mapToRegistry name bcrypt
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'bcrypt',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'bcrypt',
+12 silly mapToRegistry   name: 'bcrypt',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+14 verbose request uri https://registry.npmjs.org/bcrypt
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 4:12:52 PM
+17 verbose request id 1c6d318721d44758
+18 verbose etag W/"834568389032c2e093f374cb001bf46c"
+19 verbose lastModified Mon, 02 Mar 2020 16:23:45 GMT
+20 http request GET https://registry.npmjs.org/bcrypt
+21 http 304 https://registry.npmjs.org/bcrypt
+22 verbose headers { date: 'Thu, 16 Apr 2020 20:12:52 GMT',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'set-cookie': [ '__cfduid=d52a7c26070d1f9ed2ad24b895f57b4341587067972; expires=Sat, 16-May-20 20:12:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+22 verbose headers   'cf-ray': '5850904e4c9eca94-YYZ',
+22 verbose headers   age: '5824',
+22 verbose headers   'cache-control': 'public, max-age=300',
+22 verbose headers   etag: '"834568389032c2e093f374cb001bf46c"',
+22 verbose headers   'last-modified': 'Mon, 02 Mar 2020 16:23:45 GMT',
+22 verbose headers   vary: 'Accept-Encoding',
+22 verbose headers   'cf-cache-status': 'HIT',
+22 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 verbose headers   server: 'cloudflare',
+22 verbose headers   'cf-request-id': '02263884ea0000ca941116d200000001' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 16 Apr 2020 20:12:52 GMT',
+23 silly get     connection: 'keep-alive',
+23 silly get     'set-cookie': [ '__cfduid=d52a7c26070d1f9ed2ad24b895f57b4341587067972; expires=Sat, 16-May-20 20:12:52 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+23 silly get     'cf-ray': '5850904e4c9eca94-YYZ',
+23 silly get     age: '5824',
+23 silly get     'cache-control': 'public, max-age=300',
+23 silly get     etag: '"834568389032c2e093f374cb001bf46c"',
+23 silly get     'last-modified': 'Mon, 02 Mar 2020 16:23:45 GMT',
+23 silly get     vary: 'Accept-Encoding',
+23 silly get     'cf-cache-status': 'HIT',
+23 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+23 silly get     server: 'cloudflare',
+23 silly get     'cf-request-id': '02263884ea0000ca941116d200000001' } ]
+24 verbose etag https://registry.npmjs.org/bcrypt from cache
+25 verbose get saving bcrypt to /Users/waresfazelyar/.npm/registry.npmjs.org/bcrypt/.cache.json
+26 verbose correctMkdir /Users/waresfazelyar/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule bcrypt@2.0.0 checking installable status
+40 silly cache add args [ 'bcrypt@2.0.0', null ]
+41 verbose cache add spec bcrypt@2.0.0
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'bcrypt@2.0.0',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'bcrypt',
+42 silly cache add   name: 'bcrypt',
+42 silly cache add   rawSpec: '2.0.0',
+42 silly cache add   spec: '2.0.0',
+42 silly cache add   type: 'version' }
+43 silly addNamed bcrypt@2.0.0
+44 verbose addNamed "2.0.0" is a plain semver version for bcrypt
+45 silly mapToRegistry name bcrypt
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry data Result {
+48 silly mapToRegistry   raw: 'bcrypt',
+48 silly mapToRegistry   scope: null,
+48 silly mapToRegistry   escapedName: 'bcrypt',
+48 silly mapToRegistry   name: 'bcrypt',
+48 silly mapToRegistry   rawSpec: '',
+48 silly mapToRegistry   spec: 'latest',
+48 silly mapToRegistry   type: 'tag' }
+49 silly mapToRegistry uri https://registry.npmjs.org/bcrypt
+50 verbose addNameVersion registry:https://registry.npmjs.org/bcrypt not in flight; fetching
+51 verbose get https://registry.npmjs.org/bcrypt not expired, no request
+52 silly cache afterAdd bcrypt@2.0.0
+53 verbose afterAdd /Users/waresfazelyar/.npm/bcrypt/2.0.0/package/package.json not in flight; writing
+54 verbose correctMkdir /Users/waresfazelyar/.npm correctMkdir not in flight; initializing
+55 verbose afterAdd /Users/waresfazelyar/.npm/bcrypt/2.0.0/package/package.json written
+56 silly loadAllDepsIntoIdealTree Finishing
+57 silly loadIdealTree Finishing
+58 silly currentTree tinyapp@1.0.0
+58 silly currentTree ├── @sindresorhus/is@0.14.0
+58 silly currentTree ├── @szmarczak/http-timer@1.1.2
+58 silly currentTree ├── @types/color-name@1.1.1
+58 silly currentTree ├── abbrev@1.1.1
+58 silly currentTree ├── accepts@1.3.7
+58 silly currentTree ├─┬ ansi-align@3.0.0
+58 silly currentTree │ └── string-width@3.1.0
+58 silly currentTree ├── ansi-regex@4.1.0
+58 silly currentTree ├── ansi-styles@4.2.1
+58 silly currentTree ├── anymatch@3.1.1
+58 silly currentTree ├── aproba@1.2.0
+58 silly currentTree ├── are-we-there-yet@1.1.5
+58 silly currentTree ├── array-flatten@1.1.1
+58 silly currentTree ├── balanced-match@1.0.0
+58 silly currentTree ├── binary-extensions@2.0.0
+58 silly currentTree ├── body-parser@1.19.0
+58 silly currentTree ├── boxen@4.2.0
+58 silly currentTree ├── brace-expansion@1.1.11
+58 silly currentTree ├── braces@3.0.2
+58 silly currentTree ├── bytes@3.1.0
+58 silly currentTree ├─┬ cacheable-request@6.1.0
+58 silly currentTree │ ├── get-stream@5.1.0
+58 silly currentTree │ └── lowercase-keys@2.0.0
+58 silly currentTree ├── camelcase@5.3.1
+58 silly currentTree ├─┬ chalk@3.0.0
+58 silly currentTree │ ├── has-flag@4.0.0
+58 silly currentTree │ └── supports-color@7.1.0
+58 silly currentTree ├── chokidar@3.3.1
+58 silly currentTree ├── chownr@1.1.4
+58 silly currentTree ├── ci-info@2.0.0
+58 silly currentTree ├── cli-boxes@2.2.0
+58 silly currentTree ├── clone-response@1.0.2
+58 silly currentTree ├── code-point-at@1.1.0
+58 silly currentTree ├── color-convert@2.0.1
+58 silly currentTree ├── color-name@1.1.4
+58 silly currentTree ├── concat-map@0.0.1
+58 silly currentTree ├── configstore@5.0.1
+58 silly currentTree ├── console-control-strings@1.1.0
+58 silly currentTree ├── content-disposition@0.5.3
+58 silly currentTree ├── content-type@1.0.4
+58 silly currentTree ├── cookie-parser@1.4.5
+58 silly currentTree ├── cookie-signature@1.0.6
+58 silly currentTree ├── cookie@0.4.0
+58 silly currentTree ├── core-util-is@1.0.2
+58 silly currentTree ├── crypto-random-string@2.0.0
+58 silly currentTree ├── debug@2.6.9
+58 silly currentTree ├── decompress-response@3.3.0
+58 silly currentTree ├── deep-extend@0.6.0
+58 silly currentTree ├── defer-to-connect@1.1.3
+58 silly currentTree ├── delegates@1.0.0
+58 silly currentTree ├── depd@1.1.2
+58 silly currentTree ├── destroy@1.0.4
+58 silly currentTree ├── detect-libc@1.0.3
+58 silly currentTree ├── dot-prop@5.2.0
+58 silly currentTree ├── duplexer3@0.1.4
+58 silly currentTree ├── ee-first@1.1.1
+58 silly currentTree ├── ejs@3.0.2
+58 silly currentTree ├── emoji-regex@7.0.3
+58 silly currentTree ├── encodeurl@1.0.2
+58 silly currentTree ├── end-of-stream@1.4.4
+58 silly currentTree ├── escape-goat@2.1.1
+58 silly currentTree ├── escape-html@1.0.3
+58 silly currentTree ├── etag@1.8.1
+58 silly currentTree ├── express@4.17.1
+58 silly currentTree ├── fill-range@7.0.1
+58 silly currentTree ├── finalhandler@1.1.2
+58 silly currentTree ├── forwarded@0.1.2
+58 silly currentTree ├── fresh@0.5.2
+58 silly currentTree ├── fs-minipass@1.2.7
+58 silly currentTree ├── fs.realpath@1.0.0
+58 silly currentTree ├── fsevents@2.1.2
+58 silly currentTree ├─┬ gauge@2.7.4
+58 silly currentTree │ ├── ansi-regex@2.1.1
+58 silly currentTree │ ├── is-fullwidth-code-point@1.0.0
+58 silly currentTree │ ├── string-width@1.0.2
+58 silly currentTree │ └── strip-ansi@3.0.1
+58 silly currentTree ├── get-stream@4.1.0
+58 silly currentTree ├── glob-parent@5.1.1
+58 silly currentTree ├── glob@7.1.6
+58 silly currentTree ├── global-dirs@2.0.1
+58 silly currentTree ├── got@9.6.0
+58 silly currentTree ├── graceful-fs@4.2.3
+58 silly currentTree ├── has-flag@3.0.0
+58 silly currentTree ├── has-unicode@2.0.1
+58 silly currentTree ├── has-yarn@2.1.0
+58 silly currentTree ├── http-cache-semantics@4.1.0
+58 silly currentTree ├── http-errors@1.7.2
+58 silly currentTree ├── iconv-lite@0.4.24
+58 silly currentTree ├── ignore-by-default@1.0.1
+58 silly currentTree ├── ignore-walk@3.0.3
+58 silly currentTree ├── import-lazy@2.1.0
+58 silly currentTree ├── imurmurhash@0.1.4
+58 silly currentTree ├── inflight@1.0.6
+58 silly currentTree ├── inherits@2.0.3
+58 silly currentTree ├── ini@1.3.5
+58 silly currentTree ├── ipaddr.js@1.9.1
+58 silly currentTree ├── is-binary-path@2.1.0
+58 silly currentTree ├── is-ci@2.0.0
+58 silly currentTree ├── is-extglob@2.1.1
+58 silly currentTree ├── is-fullwidth-code-point@2.0.0
+58 silly currentTree ├── is-glob@4.0.1
+58 silly currentTree ├── is-installed-globally@0.3.2
+58 silly currentTree ├── is-npm@4.0.0
+58 silly currentTree ├── is-number@7.0.0
+58 silly currentTree ├── is-obj@2.0.0
+58 silly currentTree ├── is-path-inside@3.0.2
+58 silly currentTree ├── is-typedarray@1.0.0
+58 silly currentTree ├── is-yarn-global@0.3.0
+58 silly currentTree ├── isarray@1.0.0
+58 silly currentTree ├── json-buffer@3.0.0
+58 silly currentTree ├── keyv@3.1.0
+58 silly currentTree ├── latest-version@5.1.0
+58 silly currentTree ├── lowercase-keys@1.0.1
+58 silly currentTree ├─┬ make-dir@3.0.2
+58 silly currentTree │ └── semver@6.3.0
+58 silly currentTree ├── media-typer@0.3.0
+58 silly currentTree ├── merge-descriptors@1.0.1
+58 silly currentTree ├── methods@1.1.2
+58 silly currentTree ├── mime-db@1.43.0
+58 silly currentTree ├── mime-types@2.1.26
+58 silly currentTree ├── mime@1.6.0
+58 silly currentTree ├── mimic-response@1.0.1
+58 silly currentTree ├── minimatch@3.0.4
+58 silly currentTree ├── minimist@1.2.5
+58 silly currentTree ├── minipass@2.9.0
+58 silly currentTree ├── minizlib@1.3.3
+58 silly currentTree ├── mkdirp@0.5.5
+58 silly currentTree ├── ms@2.0.0
+58 silly currentTree ├── nan@2.10.0
+58 silly currentTree ├─┬ needle@2.4.1
+58 silly currentTree │ ├── debug@3.2.6
+58 silly currentTree │ └── ms@2.1.2
+58 silly currentTree ├── negotiator@0.6.2
+58 silly currentTree ├─┬ node-pre-gyp@0.9.0
+58 silly currentTree │ └── nopt@4.0.3
+58 silly currentTree ├─┬ nodemon@2.0.3
+58 silly currentTree │ ├── debug@3.2.6
+58 silly currentTree │ └── ms@2.1.2
+58 silly currentTree ├── nopt@1.0.10
+58 silly currentTree ├── normalize-path@3.0.0
+58 silly currentTree ├── normalize-url@4.5.0
+58 silly currentTree ├── npm-bundled@1.1.1
+58 silly currentTree ├── npm-normalize-package-bin@1.0.1
+58 silly currentTree ├── npm-packlist@1.4.8
+58 silly currentTree ├── npmlog@4.1.2
+58 silly currentTree ├── number-is-nan@1.0.1
+58 silly currentTree ├── object-assign@4.1.1
+58 silly currentTree ├── on-finished@2.3.0
+58 silly currentTree ├── once@1.4.0
+58 silly currentTree ├── os-homedir@1.0.2
+58 silly currentTree ├── os-tmpdir@1.0.2
+58 silly currentTree ├── osenv@0.1.5
+58 silly currentTree ├── p-cancelable@1.1.0
+58 silly currentTree ├─┬ package-json@6.5.0
+58 silly currentTree │ └── semver@6.3.0
+58 silly currentTree ├── parseurl@1.3.3
+58 silly currentTree ├── path-is-absolute@1.0.1
+58 silly currentTree ├── path-to-regexp@0.1.7
+58 silly currentTree ├── picomatch@2.2.2
+58 silly currentTree ├── prepend-http@2.0.0
+58 silly currentTree ├── process-nextick-args@2.0.1
+58 silly currentTree ├── proxy-addr@2.0.6
+58 silly currentTree ├── pstree.remy@1.1.7
+58 silly currentTree ├── pump@3.0.0
+58 silly currentTree ├── pupa@2.0.1
+58 silly currentTree ├── qs@6.7.0
+58 silly currentTree ├── range-parser@1.2.1
+58 silly currentTree ├── raw-body@2.4.0
+58 silly currentTree ├── rc@1.2.8
+58 silly currentTree ├── readable-stream@2.3.7
+58 silly currentTree ├── readdirp@3.3.0
+58 silly currentTree ├── registry-auth-token@4.1.1
+58 silly currentTree ├── registry-url@5.1.0
+58 silly currentTree ├── responselike@1.0.2
+58 silly currentTree ├── rimraf@2.7.1
+58 silly currentTree ├── safe-buffer@5.1.2
+58 silly currentTree ├── safer-buffer@2.1.2
+58 silly currentTree ├── sax@1.2.4
+58 silly currentTree ├─┬ semver-diff@3.1.1
+58 silly currentTree │ └── semver@6.3.0
+58 silly currentTree ├── semver@5.7.1
+58 silly currentTree ├─┬ send@0.17.1
+58 silly currentTree │ └── ms@2.1.1
+58 silly currentTree ├── serve-static@1.14.1
+58 silly currentTree ├── set-blocking@2.0.0
+58 silly currentTree ├── setprototypeof@1.1.1
+58 silly currentTree ├── signal-exit@3.0.3
+58 silly currentTree ├── statuses@1.5.0
+58 silly currentTree ├── string_decoder@1.1.1
+58 silly currentTree ├─┬ string-width@4.2.0
+58 silly currentTree │ ├── ansi-regex@5.0.0
+58 silly currentTree │ ├── emoji-regex@8.0.0
+58 silly currentTree │ ├── is-fullwidth-code-point@3.0.0
+58 silly currentTree │ └── strip-ansi@6.0.0
+58 silly currentTree ├── strip-ansi@5.2.0
+58 silly currentTree ├── strip-json-comments@2.0.1
+58 silly currentTree ├── supports-color@5.5.0
+58 silly currentTree ├── tar@4.4.13
+58 silly currentTree ├── term-size@2.2.0
+58 silly currentTree ├── to-readable-stream@1.0.0
+58 silly currentTree ├── to-regex-range@5.0.1
+58 silly currentTree ├── toidentifier@1.0.0
+58 silly currentTree ├── touch@3.1.0
+58 silly currentTree ├── type-fest@0.8.1
+58 silly currentTree ├── type-is@1.6.18
+58 silly currentTree ├── typedarray-to-buffer@3.1.5
+58 silly currentTree ├── undefsafe@2.0.3
+58 silly currentTree ├── unique-string@2.0.0
+58 silly currentTree ├── unpipe@1.0.0
+58 silly currentTree ├── update-notifier@4.1.0
+58 silly currentTree ├── url-parse-lax@3.0.0
+58 silly currentTree ├── util-deprecate@1.0.2
+58 silly currentTree ├── utils-merge@1.0.1
+58 silly currentTree ├── vary@1.1.2
+58 silly currentTree ├─┬ wide-align@1.1.3
+58 silly currentTree │ ├── ansi-regex@3.0.0
+58 silly currentTree │ ├── string-width@2.1.1
+58 silly currentTree │ └── strip-ansi@4.0.0
+58 silly currentTree ├── widest-line@3.1.0
+58 silly currentTree ├── wrappy@1.0.2
+58 silly currentTree ├── write-file-atomic@3.0.3
+58 silly currentTree ├── xdg-basedir@4.0.0
+58 silly currentTree └── yallist@3.1.1
+59 silly idealTree tinyapp@1.0.0
+59 silly idealTree ├── @sindresorhus/is@0.14.0
+59 silly idealTree ├── @szmarczak/http-timer@1.1.2
+59 silly idealTree ├── @types/color-name@1.1.1
+59 silly idealTree ├── abbrev@1.1.1
+59 silly idealTree ├── accepts@1.3.7
+59 silly idealTree ├─┬ ansi-align@3.0.0
+59 silly idealTree │ └── string-width@3.1.0
+59 silly idealTree ├── ansi-regex@4.1.0
+59 silly idealTree ├── ansi-styles@4.2.1
+59 silly idealTree ├── anymatch@3.1.1
+59 silly idealTree ├── aproba@1.2.0
+59 silly idealTree ├── are-we-there-yet@1.1.5
+59 silly idealTree ├── array-flatten@1.1.1
+59 silly idealTree ├── balanced-match@1.0.0
+59 silly idealTree ├── bcrypt@2.0.0
+59 silly idealTree ├── binary-extensions@2.0.0
+59 silly idealTree ├── body-parser@1.19.0
+59 silly idealTree ├── boxen@4.2.0
+59 silly idealTree ├── brace-expansion@1.1.11
+59 silly idealTree ├── braces@3.0.2
+59 silly idealTree ├── bytes@3.1.0
+59 silly idealTree ├─┬ cacheable-request@6.1.0
+59 silly idealTree │ ├── get-stream@5.1.0
+59 silly idealTree │ └── lowercase-keys@2.0.0
+59 silly idealTree ├── camelcase@5.3.1
+59 silly idealTree ├─┬ chalk@3.0.0
+59 silly idealTree │ ├── has-flag@4.0.0
+59 silly idealTree │ └── supports-color@7.1.0
+59 silly idealTree ├── chokidar@3.3.1
+59 silly idealTree ├── chownr@1.1.4
+59 silly idealTree ├── ci-info@2.0.0
+59 silly idealTree ├── cli-boxes@2.2.0
+59 silly idealTree ├── clone-response@1.0.2
+59 silly idealTree ├── code-point-at@1.1.0
+59 silly idealTree ├── color-convert@2.0.1
+59 silly idealTree ├── color-name@1.1.4
+59 silly idealTree ├── concat-map@0.0.1
+59 silly idealTree ├── configstore@5.0.1
+59 silly idealTree ├── console-control-strings@1.1.0
+59 silly idealTree ├── content-disposition@0.5.3
+59 silly idealTree ├── content-type@1.0.4
+59 silly idealTree ├── cookie-parser@1.4.5
+59 silly idealTree ├── cookie-signature@1.0.6
+59 silly idealTree ├── cookie@0.4.0
+59 silly idealTree ├── core-util-is@1.0.2
+59 silly idealTree ├── crypto-random-string@2.0.0
+59 silly idealTree ├── debug@2.6.9
+59 silly idealTree ├── decompress-response@3.3.0
+59 silly idealTree ├── deep-extend@0.6.0
+59 silly idealTree ├── defer-to-connect@1.1.3
+59 silly idealTree ├── delegates@1.0.0
+59 silly idealTree ├── depd@1.1.2
+59 silly idealTree ├── destroy@1.0.4
+59 silly idealTree ├── detect-libc@1.0.3
+59 silly idealTree ├── dot-prop@5.2.0
+59 silly idealTree ├── duplexer3@0.1.4
+59 silly idealTree ├── ee-first@1.1.1
+59 silly idealTree ├── ejs@3.0.2
+59 silly idealTree ├── emoji-regex@7.0.3
+59 silly idealTree ├── encodeurl@1.0.2
+59 silly idealTree ├── end-of-stream@1.4.4
+59 silly idealTree ├── escape-goat@2.1.1
+59 silly idealTree ├── escape-html@1.0.3
+59 silly idealTree ├── etag@1.8.1
+59 silly idealTree ├── express@4.17.1
+59 silly idealTree ├── fill-range@7.0.1
+59 silly idealTree ├── finalhandler@1.1.2
+59 silly idealTree ├── forwarded@0.1.2
+59 silly idealTree ├── fresh@0.5.2
+59 silly idealTree ├── fs-minipass@1.2.7
+59 silly idealTree ├── fs.realpath@1.0.0
+59 silly idealTree ├── fsevents@2.1.2
+59 silly idealTree ├─┬ gauge@2.7.4
+59 silly idealTree │ ├── ansi-regex@2.1.1
+59 silly idealTree │ ├── is-fullwidth-code-point@1.0.0
+59 silly idealTree │ ├── string-width@1.0.2
+59 silly idealTree │ └── strip-ansi@3.0.1
+59 silly idealTree ├── get-stream@4.1.0
+59 silly idealTree ├── glob-parent@5.1.1
+59 silly idealTree ├── glob@7.1.6
+59 silly idealTree ├── global-dirs@2.0.1
+59 silly idealTree ├── got@9.6.0
+59 silly idealTree ├── graceful-fs@4.2.3
+59 silly idealTree ├── has-flag@3.0.0
+59 silly idealTree ├── has-unicode@2.0.1
+59 silly idealTree ├── has-yarn@2.1.0
+59 silly idealTree ├── http-cache-semantics@4.1.0
+59 silly idealTree ├── http-errors@1.7.2
+59 silly idealTree ├── iconv-lite@0.4.24
+59 silly idealTree ├── ignore-by-default@1.0.1
+59 silly idealTree ├── ignore-walk@3.0.3
+59 silly idealTree ├── import-lazy@2.1.0
+59 silly idealTree ├── imurmurhash@0.1.4
+59 silly idealTree ├── inflight@1.0.6
+59 silly idealTree ├── inherits@2.0.3
+59 silly idealTree ├── ini@1.3.5
+59 silly idealTree ├── ipaddr.js@1.9.1
+59 silly idealTree ├── is-binary-path@2.1.0
+59 silly idealTree ├── is-ci@2.0.0
+59 silly idealTree ├── is-extglob@2.1.1
+59 silly idealTree ├── is-fullwidth-code-point@2.0.0
+59 silly idealTree ├── is-glob@4.0.1
+59 silly idealTree ├── is-installed-globally@0.3.2
+59 silly idealTree ├── is-npm@4.0.0
+59 silly idealTree ├── is-number@7.0.0
+59 silly idealTree ├── is-obj@2.0.0
+59 silly idealTree ├── is-path-inside@3.0.2
+59 silly idealTree ├── is-typedarray@1.0.0
+59 silly idealTree ├── is-yarn-global@0.3.0
+59 silly idealTree ├── isarray@1.0.0
+59 silly idealTree ├── json-buffer@3.0.0
+59 silly idealTree ├── keyv@3.1.0
+59 silly idealTree ├── latest-version@5.1.0
+59 silly idealTree ├── lowercase-keys@1.0.1
+59 silly idealTree ├─┬ make-dir@3.0.2
+59 silly idealTree │ └── semver@6.3.0
+59 silly idealTree ├── media-typer@0.3.0
+59 silly idealTree ├── merge-descriptors@1.0.1
+59 silly idealTree ├── methods@1.1.2
+59 silly idealTree ├── mime-db@1.43.0
+59 silly idealTree ├── mime-types@2.1.26
+59 silly idealTree ├── mime@1.6.0
+59 silly idealTree ├── mimic-response@1.0.1
+59 silly idealTree ├── minimatch@3.0.4
+59 silly idealTree ├── minimist@1.2.5
+59 silly idealTree ├── minipass@2.9.0
+59 silly idealTree ├── minizlib@1.3.3
+59 silly idealTree ├── mkdirp@0.5.5
+59 silly idealTree ├── ms@2.0.0
+59 silly idealTree ├── nan@2.10.0
+59 silly idealTree ├─┬ needle@2.4.1
+59 silly idealTree │ ├── debug@3.2.6
+59 silly idealTree │ └── ms@2.1.2
+59 silly idealTree ├── negotiator@0.6.2
+59 silly idealTree ├─┬ node-pre-gyp@0.9.0
+59 silly idealTree │ └── nopt@4.0.3
+59 silly idealTree ├─┬ nodemon@2.0.3
+59 silly idealTree │ ├── debug@3.2.6
+59 silly idealTree │ └── ms@2.1.2
+59 silly idealTree ├── nopt@1.0.10
+59 silly idealTree ├── normalize-path@3.0.0
+59 silly idealTree ├── normalize-url@4.5.0
+59 silly idealTree ├── npm-bundled@1.1.1
+59 silly idealTree ├── npm-normalize-package-bin@1.0.1
+59 silly idealTree ├── npm-packlist@1.4.8
+59 silly idealTree ├── npmlog@4.1.2
+59 silly idealTree ├── number-is-nan@1.0.1
+59 silly idealTree ├── object-assign@4.1.1
+59 silly idealTree ├── on-finished@2.3.0
+59 silly idealTree ├── once@1.4.0
+59 silly idealTree ├── os-homedir@1.0.2
+59 silly idealTree ├── os-tmpdir@1.0.2
+59 silly idealTree ├── osenv@0.1.5
+59 silly idealTree ├── p-cancelable@1.1.0
+59 silly idealTree ├─┬ package-json@6.5.0
+59 silly idealTree │ └── semver@6.3.0
+59 silly idealTree ├── parseurl@1.3.3
+59 silly idealTree ├── path-is-absolute@1.0.1
+59 silly idealTree ├── path-to-regexp@0.1.7
+59 silly idealTree ├── picomatch@2.2.2
+59 silly idealTree ├── prepend-http@2.0.0
+59 silly idealTree ├── process-nextick-args@2.0.1
+59 silly idealTree ├── proxy-addr@2.0.6
+59 silly idealTree ├── pstree.remy@1.1.7
+59 silly idealTree ├── pump@3.0.0
+59 silly idealTree ├── pupa@2.0.1
+59 silly idealTree ├── qs@6.7.0
+59 silly idealTree ├── range-parser@1.2.1
+59 silly idealTree ├── raw-body@2.4.0
+59 silly idealTree ├── rc@1.2.8
+59 silly idealTree ├── readable-stream@2.3.7
+59 silly idealTree ├── readdirp@3.3.0
+59 silly idealTree ├── registry-auth-token@4.1.1
+59 silly idealTree ├── registry-url@5.1.0
+59 silly idealTree ├── responselike@1.0.2
+59 silly idealTree ├── rimraf@2.7.1
+59 silly idealTree ├── safe-buffer@5.1.2
+59 silly idealTree ├── safer-buffer@2.1.2
+59 silly idealTree ├── sax@1.2.4
+59 silly idealTree ├─┬ semver-diff@3.1.1
+59 silly idealTree │ └── semver@6.3.0
+59 silly idealTree ├── semver@5.7.1
+59 silly idealTree ├─┬ send@0.17.1
+59 silly idealTree │ └── ms@2.1.1
+59 silly idealTree ├── serve-static@1.14.1
+59 silly idealTree ├── set-blocking@2.0.0
+59 silly idealTree ├── setprototypeof@1.1.1
+59 silly idealTree ├── signal-exit@3.0.3
+59 silly idealTree ├── statuses@1.5.0
+59 silly idealTree ├── string_decoder@1.1.1
+59 silly idealTree ├─┬ string-width@4.2.0
+59 silly idealTree │ ├── ansi-regex@5.0.0
+59 silly idealTree │ ├── emoji-regex@8.0.0
+59 silly idealTree │ ├── is-fullwidth-code-point@3.0.0
+59 silly idealTree │ └── strip-ansi@6.0.0
+59 silly idealTree ├── strip-ansi@5.2.0
+59 silly idealTree ├── strip-json-comments@2.0.1
+59 silly idealTree ├── supports-color@5.5.0
+59 silly idealTree ├── tar@4.4.13
+59 silly idealTree ├── term-size@2.2.0
+59 silly idealTree ├── to-readable-stream@1.0.0
+59 silly idealTree ├── to-regex-range@5.0.1
+59 silly idealTree ├── toidentifier@1.0.0
+59 silly idealTree ├── touch@3.1.0
+59 silly idealTree ├── type-fest@0.8.1
+59 silly idealTree ├── type-is@1.6.18
+59 silly idealTree ├── typedarray-to-buffer@3.1.5
+59 silly idealTree ├── undefsafe@2.0.3
+59 silly idealTree ├── unique-string@2.0.0
+59 silly idealTree ├── unpipe@1.0.0
+59 silly idealTree ├── update-notifier@4.1.0
+59 silly idealTree ├── url-parse-lax@3.0.0
+59 silly idealTree ├── util-deprecate@1.0.2
+59 silly idealTree ├── utils-merge@1.0.1
+59 silly idealTree ├── vary@1.1.2
+59 silly idealTree ├─┬ wide-align@1.1.3
+59 silly idealTree │ ├── ansi-regex@3.0.0
+59 silly idealTree │ ├── string-width@2.1.1
+59 silly idealTree │ └── strip-ansi@4.0.0
+59 silly idealTree ├── widest-line@3.1.0
+59 silly idealTree ├── wrappy@1.0.2
+59 silly idealTree ├── write-file-atomic@3.0.3
+59 silly idealTree ├── xdg-basedir@4.0.0
+59 silly idealTree └── yallist@3.1.1
+60 silly generateActionsToTake Starting
+61 silly install generateActionsToTake
+62 silly generateActionsToTake Finishing
+63 silly diffTrees action count 1
+64 silly diffTrees add bcrypt@2.0.0
+65 silly decomposeActions action count 8
+66 silly decomposeActions fetch bcrypt@2.0.0
+67 silly decomposeActions extract bcrypt@2.0.0
+68 silly decomposeActions test bcrypt@2.0.0
+69 silly decomposeActions preinstall bcrypt@2.0.0
+70 silly decomposeActions build bcrypt@2.0.0
+71 silly decomposeActions install bcrypt@2.0.0
+72 silly decomposeActions postinstall bcrypt@2.0.0
+73 silly decomposeActions finalize bcrypt@2.0.0
+74 silly runTopLevelLifecycles Starting
+75 silly executeActions Starting
+76 silly install executeActions
+77 silly doSerial global-install 0
+78 silly doParallel fetch 1
+79 verbose correctMkdir /Users/waresfazelyar/.npm/_locks correctMkdir not in flight; initializing
+80 verbose lock using /Users/waresfazelyar/.npm/_locks/staging-07732a12ef68c59e.lock for /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging
+81 silly doParallel extract 1
+82 silly extract bcrypt@2.0.0
+83 verbose unbuild node_modules/.staging/bcrypt-6c70bb01
+84 silly gentlyRm /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01 is being purged from base /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp
+85 verbose gentlyRm don't care about contents; nuking /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01
+86 verbose tar unpack /Users/waresfazelyar/.npm/bcrypt/2.0.0/package.tgz
+87 verbose tar unpacking to /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01
+88 silly gentlyRm /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01 is being purged
+89 verbose gentlyRm don't care about contents; nuking /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01
+90 silly gunzTarPerm modes [ '755', '644' ]
+91 silly gunzTarPerm extractEntry package.json
+92 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+93 silly gunzTarPerm extractEntry .editorconfig
+94 silly gunzTarPerm modified mode [ '.editorconfig', 436, 420 ]
+95 silly gunzTarPerm extractEntry .travis.yml
+96 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+97 silly gunzTarPerm extractEntry appveyor.yml
+98 silly gunzTarPerm modified mode [ 'appveyor.yml', 436, 420 ]
+99 silly gunzTarPerm extractEntry bcrypt.js
+100 silly gunzTarPerm modified mode [ 'bcrypt.js', 436, 420 ]
+101 silly gunzTarPerm extractEntry binding.gyp
+102 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 420 ]
+103 silly gunzTarPerm extractEntry CHANGELOG.md
+104 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+105 silly gunzTarPerm extractEntry ISSUE_TEMPLATE.md
+106 silly gunzTarPerm modified mode [ 'ISSUE_TEMPLATE.md', 436, 420 ]
+107 silly gunzTarPerm extractEntry LICENSE
+108 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+109 silly gunzTarPerm extractEntry Makefile
+110 silly gunzTarPerm modified mode [ 'Makefile', 436, 420 ]
+111 silly gunzTarPerm extractEntry README.md
+112 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+113 silly gunzTarPerm extractEntry werker.yml
+114 silly gunzTarPerm modified mode [ 'werker.yml', 436, 420 ]
+115 silly gunzTarPerm extractEntry examples/async_compare.js
+116 silly gunzTarPerm modified mode [ 'examples/async_compare.js', 436, 420 ]
+117 silly gunzTarPerm extractEntry examples/forever_gen_salt.js
+118 silly gunzTarPerm modified mode [ 'examples/forever_gen_salt.js', 436, 420 ]
+119 silly gunzTarPerm extractEntry lib/promises.js
+120 silly gunzTarPerm modified mode [ 'lib/promises.js', 436, 420 ]
+121 silly gunzTarPerm extractEntry src/bcrypt_node.cc
+122 silly gunzTarPerm modified mode [ 'src/bcrypt_node.cc', 436, 420 ]
+123 silly gunzTarPerm extractEntry src/bcrypt.cc
+124 silly gunzTarPerm modified mode [ 'src/bcrypt.cc', 436, 420 ]
+125 silly gunzTarPerm extractEntry src/blowfish.cc
+126 silly gunzTarPerm modified mode [ 'src/blowfish.cc', 436, 420 ]
+127 silly gunzTarPerm extractEntry src/node_blf.h
+128 silly gunzTarPerm modified mode [ 'src/node_blf.h', 436, 420 ]
+129 silly gunzTarPerm extractEntry test/async.js
+130 silly gunzTarPerm modified mode [ 'test/async.js', 436, 420 ]
+131 silly gunzTarPerm extractEntry test/implementation.js
+132 silly gunzTarPerm modified mode [ 'test/implementation.js', 436, 420 ]
+133 silly gunzTarPerm extractEntry test/promise.js
+134 silly gunzTarPerm modified mode [ 'test/promise.js', 436, 420 ]
+135 silly gunzTarPerm extractEntry test/repetitions.js
+136 silly gunzTarPerm modified mode [ 'test/repetitions.js', 436, 420 ]
+137 silly gunzTarPerm extractEntry test/sync.js
+138 silly gunzTarPerm modified mode [ 'test/sync.js', 436, 420 ]
+139 silly gentlyRm /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01/node_modules is being purged
+140 verbose gentlyRm don't care about contents; nuking /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01/node_modules
+141 silly doParallel preinstall 1
+142 silly preinstall bcrypt@2.0.0 /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01
+143 info lifecycle bcrypt@2.0.0~preinstall: bcrypt@2.0.0
+144 silly lifecycle bcrypt@2.0.0~preinstall: no script for preinstall, continuing
+145 silly doReverseSerial remove 0
+146 silly doSerial move 0
+147 silly doSerial finalize 1
+148 silly finalize /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/bcrypt
+149 silly doSerial build 1
+150 silly build bcrypt@2.0.0
+151 info linkStuff bcrypt@2.0.0
+152 silly linkStuff bcrypt@2.0.0 has /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules as its parent node_modules
+153 verbose linkBins bcrypt@2.0.0
+154 verbose linkMans bcrypt@2.0.0
+155 silly doSerial global-link 0
+156 silly doParallel update-linked 0
+157 silly doSerial install 1
+158 silly install bcrypt@2.0.0 /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging/bcrypt-6c70bb01
+159 info lifecycle bcrypt@2.0.0~install: bcrypt@2.0.0
+160 verbose lifecycle bcrypt@2.0.0~install: unsafe-perm in lifecycle true
+161 verbose lifecycle bcrypt@2.0.0~install: PATH: /Users/waresfazelyar/.nvm/versions/node/v7.2.1/lib/node_modules/npm/bin/node-gyp-bin:/Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/bcrypt/node_modules/.bin:/Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.bin:/Users/waresfazelyar/.nvm/versions/node/v7.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+162 verbose lifecycle bcrypt@2.0.0~install: CWD: /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/bcrypt
+163 silly lifecycle bcrypt@2.0.0~install: Args: [ '-c', 'node-pre-gyp install --fallback-to-build' ]
+164 silly lifecycle bcrypt@2.0.0~install: Returned: code: 1  signal: null
+165 info lifecycle bcrypt@2.0.0~install: Failed to exec install script
+166 verbose unlock done using /Users/waresfazelyar/.npm/_locks/staging-07732a12ef68c59e.lock for /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp/node_modules/.staging
+167 silly rollbackFailedOptional Starting
+168 silly rollbackFailedOptional Finishing
+169 silly runTopLevelLifecycles Finishing
+170 silly install printInstalled
+171 warn tinyapp@1.0.0 No description
+172 verbose If you need help, you may report this error at:
+172 verbose     <https://github.com/npm/npm/issues>
+173 verbose stack Error: bcrypt@2.0.0 install: `node-pre-gyp install --fallback-to-build`
+173 verbose stack Exit status 1
+173 verbose stack     at EventEmitter.<anonymous> (/Users/waresfazelyar/.nvm/versions/node/v7.2.1/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+173 verbose stack     at emitTwo (events.js:106:13)
+173 verbose stack     at EventEmitter.emit (events.js:191:7)
+173 verbose stack     at ChildProcess.<anonymous> (/Users/waresfazelyar/.nvm/versions/node/v7.2.1/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+173 verbose stack     at emitTwo (events.js:106:13)
+173 verbose stack     at ChildProcess.emit (events.js:191:7)
+173 verbose stack     at maybeClose (internal/child_process.js:885:16)
+173 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+174 verbose pkgid bcrypt@2.0.0
+175 verbose cwd /Users/waresfazelyar/Desktop/lighthouse/w3/tinyapp
+176 error Darwin 19.4.0
+177 error argv "/Users/waresfazelyar/.nvm/versions/node/v7.2.1/bin/node" "/Users/waresfazelyar/.nvm/versions/node/v7.2.1/bin/npm" "install" "-E" "bcrypt@2.0.0"
+178 error node v7.2.1
+179 error npm  v3.10.10
+180 error code ELIFECYCLE
+181 error bcrypt@2.0.0 install: `node-pre-gyp install --fallback-to-build`
+181 error Exit status 1
+182 error Failed at the bcrypt@2.0.0 install script 'node-pre-gyp install --fallback-to-build'.
+182 error Make sure you have the latest version of node.js and npm installed.
+182 error If you do, this is most likely a problem with the bcrypt package,
+182 error not with npm itself.
+182 error Tell the author that this fails on your system:
+182 error     node-pre-gyp install --fallback-to-build
+182 error You can get information on how to open an issue for this project with:
+182 error     npm bugs bcrypt
+182 error Or if that isn't available, you can get their info via:
+182 error     npm owner ls bcrypt
+182 error There is likely additional logging output above.
+183 verbose exit [ 1, true ]
