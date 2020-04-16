@@ -166,9 +166,17 @@ app.get("/urls/:shortURL", (req, res) => {
 });
 
 app.post("/urls/:shortURL/delete", (req, res) => {
-  // console.log(urlDatabase[req.params.shortURL]);
-  delete urlDatabase[req.params.shortURL]
-  res.redirect("/urls");
+  let userUrl = urlsForUser(req.cookies.user_id, urlDatabase)
+
+  for (let key in userUrl) {
+    if (req.params.shortURL === key) {
+      delete urlDatabase[req.params.shortURL]
+      res.redirect("/urls");
+      return;
+    }
+  }
+  res.status(403).send("You are not authorized to delete this URL!")
+
 });
 
 app.post("/urls/:id", (req, res) => {
