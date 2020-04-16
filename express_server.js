@@ -64,12 +64,12 @@ app.post("/login", (req, res) => {
   let email = req.body.email;
   let password = req.body.password;
   let userID = checkUserEmail(email, users);
-  console.log(userID, email, password)
+  console.log(userID, email, password);
 
   if (!userID) {
     res.status(403).send("Email not valid. Please register.")
     return;
-  } else if (password !== users[userID].password) {
+  } else if (!bcrypt.compareSync(password, users[userID].password)) {
     res.status(403).send("Password incorrect. Please try logging in again");
   }
 
