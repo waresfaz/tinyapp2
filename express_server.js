@@ -132,6 +132,12 @@ app.post("/urls", (req, res) => {
 
 app.get("/urls/new", (req, res) => {
   let templateVars = { user: users[req.cookies.user_id] }
+
+  if (!users[req.cookies.user_id]) {
+    res.redirect("/login");
+    return;
+  }
+
   res.render("urls_new", templateVars);
 });
 
