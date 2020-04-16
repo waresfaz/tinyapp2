@@ -3,7 +3,7 @@ const app = express();
 const PORT = 8080;
 const cookieParser = require("cookie-parser")
 const bodyParser = require("body-parser");
-const checkUserEmail = require("./helper");
+const { checkUserEmail, urlsForUser } = require("./helper");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(cookieParser());
@@ -114,11 +114,17 @@ app.post("/register", (req, res) => {
 // BELOW ARE NEW REQUEST HANDLERS. ABOVE WAS JUST TESTING
 
 app.get("/urls", (req, res) => {
+  let filteredUrls = urlsForUser(req.cookies.user_id, urlDatabase);
+
+  if(!users[req.cookies.user_id]) {
+    res.status(403).send("Please Login or Register!")
+  } else {
     let templateVars = { 
-      urls: urlDatabase,
+      filteredUrls: filteredUrls,
       user: users[req.cookies.user_id]
     }
     res.render("urls_index", templateVars);
+  }
 });
 
 app.post("/urls", (req, res) => {
@@ -146,14 +152,16 @@ app.get("/urls/new", (req, res) => {
 });
 
 app.get("/urls/:shortURL", (req, res) => {
+  if(!users[req.cookies.user_id]) {
+    res.status(403).send("Please login or register!")
+  }
   const shortURL = req.params.shortURL;
   const longURL = urlDatabase[shortURL].longURL;
   let templateVars = { 
     shortURL, longURL,
     user: users[req.cookies.user_id]
   }
-  // console.log(longURL)
-  // res.redirect(longURL);
+
   res.render("urls_show", templateVars);
 });
 

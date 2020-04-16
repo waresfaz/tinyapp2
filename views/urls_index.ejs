@@ -20,10 +20,10 @@
         <th scope="col">Delete</th>
       </thread>
       <tbody>
-        <% for(let url in urls) { %>
+        <% for(let url in filteredUrls) { %>
           <tr>
             <td><%= url %></td>
-            <td><%= urls[url].longURL %></td>
+            <td><%= filteredUrls[url].longURL %></td>
             <td><form method="GET" action="/urls/<%= url %>"><button type="submit" class="btn btn-outline-secondary">Update</button></form></td>
             <td><form method="POST" action="/urls/<%= url %>/delete"><button type="submit" class="btn btn-danger">Delete</button></form></td>
           </tr>
