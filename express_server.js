@@ -181,11 +181,18 @@ app.post("/urls/:shortURL/delete", (req, res) => {
 
 app.post("/urls/:id", (req, res) => {
   let id = req.params.id
-  // console.log(id)
   let newLongURL = req.body.longURL
-  // console.log(newLongURL);
-  urlDatabase[id] = newLongURL
-  res.redirect('/urls');
+  
+  let userUrl = urlsForUser(req.cookies.user_id, urlDatabase)
+
+  for (let key in userUrl) {
+    if (id === key) {
+      urlDatabase[id].longURL = newLongURL
+      res.redirect('/urls');
+      return;
+    }
+  }
+  res.status(403).send("You are not authorized to update this URL!")
 });
 
 app.get("/u/:shortURL", (req, res) => {
