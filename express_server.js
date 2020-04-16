@@ -123,10 +123,14 @@ app.get("/urls", (req, res) => {
 
 app.post("/urls", (req, res) => {
   // console.log(req.body.longURL);
-  newShortURL = generateRandomString()
+  let newShortURL = generateRandomString()
   // console.log(newShortURL)
-  urlDatabase[newShortURL] = req.body.longURL
-  console.log("akjdfhkajdfh" + urlDatabase);
+  let longURL = req.body.longURL;
+  urlDatabase[newShortURL] = {
+    longURL : longURL,
+    userID: req.cookies.user_id
+  }
+  console.log(urlDatabase);
   res.redirect(`/urls/${newShortURL}`);
 });
 
