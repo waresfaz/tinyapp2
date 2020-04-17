@@ -14,6 +14,6 @@ const urlsForUser = (id, urlDatabase) => {
     }
   }
   return filteredDatabase;
-}
+};
 
 module.exports = { checkUserEmail, urlsForUser };
